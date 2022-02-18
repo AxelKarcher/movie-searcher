@@ -1,0 +1,37 @@
+#elemContainer {
+  background-color: white;
+  padding: 15px;
+  border-radius: 15px;
+  font-size: 20px;
+  color: black;
+
+  #topPart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #posterImg {
+    height: 230px;
+    border: 1px black solid;
+  }
+
+  #title {
+    text-align: center;
+  }
+
+  .separator {
+    height: 1px; width: inherit;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    background-color: black;
+  }
+}
+
+#elemContainer:hover {
+  transform: scale(0.95);
+}
+
+#elemContainer:active {
+  background-color: lightgray;
+}
