@@ -1,90 +1,28 @@
 #HomePageContainer {
-  height: inherit;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  overflow-y: scroll;
 
   #elemGrid {
-    height: 100%;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-gap: 10px;
-    margin: 30px;
-    margin-top: 30px;
-  }
-
-  #elem {
-    padding: 10px;
-    border: 2px black solid;
+    margin: 1% 1%;
+    margin-bottom: 6.3%;
+    overflow: auto;
+    border: 1px white solid;
     border-radius: 10px;
-    background-color: white;
-    color: black;
+    padding: 1%;
   }
 
-  #controlPanel {
-    position: fixed;
-    bottom: 15px;
-    right: 35px;
-    display: flex;
-    background-color: white;
-    border: 1px black solid;
-    color: black;
-    padding: 10px;
-    border-radius: 10px;
-
-    #rangePanel {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      margin-right: 10px;
-    }
-
-    #btns {
-      display: flex;
-
-      Button {
-        margin-right: 10px;
-      }
-
-      Button:last-child {
-        margin-right: 0px;
-      }
-    }
+  #elemGrid::-webkit-scrollbar {
+    width: 0px;
   }
 
-  #modal {
-    height: 100%; width: 100%;
+  #bottomPart {
     position: absolute;
-    z-index: 1;
-    background-color: rgba(lightgray, 0.75);
-
-    #modalPanel {
-      height: 60%; width: 60%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      background-color: white;
-      border: 2px black solid;
-      border-radius: 15px;
-      color: black;
-      text-align: center;
-      padding: 15px;
-
-      #modalBackground {
-        height: 60%; width: 60%;
-        position: relative;
-        top: 0px; left: 0px;
-        opacity: 0.2;
-      }
-
-      #closeModalBtn {
-        position: relative;
-        bottom: 10px;
-      }
-    }
+    bottom: 1%;
   }
 }

@@ -1,0 +1,27 @@
+#controlContainer {
+  display: flex;
+  background-color: white;
+  border: 1px black solid;
+  color: black;
+  padding: 10px;
+  border-radius: 10px;
+
+  #rangePanel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #searchContainer {
+    margin: 0px 15px;
+    display: flex;
+    align-items: center;
+  }
+
+  #btns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3px;
+  }
+}

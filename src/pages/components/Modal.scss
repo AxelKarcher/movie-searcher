@@ -1,0 +1,28 @@
+#modalContainer {
+  height: 100%; width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(black, 0.75);
+
+  #modalPanel {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px black solid;
+    border-radius: 15px;
+    color: black;
+    text-align: center;
+    padding: 15px;
+    background-size: cover;
+    background-position: center;
+
+    #closeModalBtn {
+      position: relative;
+    }
+  }
+}

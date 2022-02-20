@@ -1,7 +1,11 @@
 #elemContainer {
-  background-color: white;
+  user-select: none;
   padding: 15px;
   border-radius: 15px;
+  background: linear-gradient(
+    rgba(white, 0.9),
+    rgba(lightgray, 0.0)
+  );
   font-size: 20px;
   color: black;
 
